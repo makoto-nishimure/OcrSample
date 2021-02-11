@@ -15,6 +15,7 @@
 		0E6D980C25CEBC91005A4E87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E6D980A25CEBC91005A4E87 /* LaunchScreen.storyboard */; };
 		0E6D981725CEBC91005A4E87 /* StackViewSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6D981625CEBC91005A4E87 /* StackViewSampleTests.swift */; };
 		0E6D982225CEBC91005A4E87 /* StackViewSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6D982125CEBC91005A4E87 /* StackViewSampleUITests.swift */; };
+		0E6D983625D523A3005A4E87 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6D983525D523A3005A4E87 /* TableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0E6D981D25CEBC91005A4E87 /* StackViewSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackViewSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E6D982125CEBC91005A4E87 /* StackViewSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewSampleUITests.swift; sourceTree = "<group>"; };
 		0E6D982325CEBC91005A4E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E6D983525D523A3005A4E87 /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		0E6D97F325CEBC8E005A4E87 = {
 			isa = PBXGroup;
 			children = (
+				0E6D983525D523A3005A4E87 /* TableCell.swift */,
 				0E6D97FE25CEBC8E005A4E87 /* StackViewSample */,
 				0E6D981525CEBC91005A4E87 /* StackViewSampleTests */,
 				0E6D982025CEBC91005A4E87 /* StackViewSampleUITests */,
@@ -260,6 +263,7 @@
 			files = (
 				0E6D980425CEBC8E005A4E87 /* ViewController.swift in Sources */,
 				0E6D980025CEBC8E005A4E87 /* AppDelegate.swift in Sources */,
+				0E6D983625D523A3005A4E87 /* TableCell.swift in Sources */,
 				0E6D980225CEBC8E005A4E87 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +443,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7FQ9S38M7;
 				INFOPLIST_FILE = StackViewSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +463,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7FQ9S38M7;
 				INFOPLIST_FILE = StackViewSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
