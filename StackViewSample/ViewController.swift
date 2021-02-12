@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        title = "memo"
     }
 
     let TODO = ["境界線上のホライゾン", "Heart of Lapis", "芥見下々"]
@@ -23,16 +24,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print("tableView: \(indexPath.row)")
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cells", for: indexPath) as! TableCell
+
+        tableView.delegate = self
         tableView.rowHeight = 80
-        cell.title?.text = TODO[indexPath.row]
-        cell.context?.text = CTX[indexPath.row]
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cells", for: indexPath) as! TableCell
+        cell.setData(title: TODO[indexPath.row], context: CTX[indexPath.row])
+
         return cell
     }
     
-
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("tapped: \(indexPath.row)")
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 
 }
 
