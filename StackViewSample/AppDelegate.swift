@@ -14,6 +14,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        let memosDao: MemosDao = MemosDao.sharedInstance
+        memosDao.deleteAll()
+        
+        let TODO = ["境界線上のホライゾン", "Heart of Lapis", "芥見下々"]
+        let CTX = ["Horizon on the Middle of Nowhere", "ラピスの心臓", "呪術廻戦"]
+        
+        for i in 0 ..< TODO.count {
+            _ = memosDao.create(title: TODO[i], contents: CTX[i])
+        }
         return true
     }
 
