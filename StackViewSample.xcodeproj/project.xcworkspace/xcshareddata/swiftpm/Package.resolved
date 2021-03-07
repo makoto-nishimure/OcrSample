@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "libtesseract",
+        "repositoryURL": "https://github.com/SwiftyTesseract/libtesseract.git",
+        "state": {
+          "branch": null,
+          "revision": "d8b5fab45f5dc0b1d34b0ca7bf6620b72426adf1",
+          "version": "0.1.0"
+        }
+      },
+      {
         "package": "Realm",
         "repositoryURL": "https://github.com/realm/realm-cocoa.git",
         "state": {
@@ -17,6 +26,15 @@
           "branch": null,
           "revision": "b93ab22d2ff79b105f2a83450e5630d830166cfc",
           "version": "10.4.0"
+        }
+      },
+      {
+        "package": "SwiftyTesseract",
+        "repositoryURL": "https://github.com/SwiftyTesseract/SwiftyTesseract",
+        "state": {
+          "branch": null,
+          "revision": "1b4f0ef0c2ba08ae92254af730f2013af4ebdc4f",
+          "version": "4.0.0"
         }
       }
     ]

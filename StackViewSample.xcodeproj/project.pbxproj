@@ -24,6 +24,8 @@
 		0E6D984D25D6DE71005A4E87 /* BaseDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6D984C25D6DE71005A4E87 /* BaseDao.swift */; };
 		0E6D985225D71C24005A4E87 /* Memos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6D985125D71C24005A4E87 /* Memos.swift */; };
 		0E6D985725D71CBC005A4E87 /* MemosDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6D985625D71CBC005A4E87 /* MemosDao.swift */; };
+		0E774A9925F1469500AB9D7B /* SwiftyTesseract in Frameworks */ = {isa = PBXBuildFile; productRef = 0E774A9825F1469500AB9D7B /* SwiftyTesseract */; };
+		0E774A9E25F146BD00AB9D7B /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 0E774A9D25F146BD00AB9D7B /* tessdata */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,7 @@
 		0E6D984C25D6DE71005A4E87 /* BaseDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDao.swift; sourceTree = "<group>"; };
 		0E6D985125D71C24005A4E87 /* Memos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memos.swift; sourceTree = "<group>"; };
 		0E6D985625D71CBC005A4E87 /* MemosDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemosDao.swift; sourceTree = "<group>"; };
+		0E774A9D25F146BD00AB9D7B /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E774A9925F1469500AB9D7B /* SwiftyTesseract in Frameworks */,
 				0E6D983E25D57EAF005A4E87 /* RealmSwift in Frameworks */,
 				0E6D983C25D57EAF005A4E87 /* Realm in Frameworks */,
 			);
@@ -123,6 +127,7 @@
 		0E6D97FE25CEBC8E005A4E87 /* StackViewSample */ = {
 			isa = PBXGroup;
 			children = (
+				0E774A9D25F146BD00AB9D7B /* tessdata */,
 				0E6D97FF25CEBC8E005A4E87 /* AppDelegate.swift */,
 				0E6D980125CEBC8E005A4E87 /* SceneDelegate.swift */,
 				0E6D980325CEBC8E005A4E87 /* ViewController.swift */,
@@ -172,6 +177,7 @@
 			packageProductDependencies = (
 				0E6D983B25D57EAF005A4E87 /* Realm */,
 				0E6D983D25D57EAF005A4E87 /* RealmSwift */,
+				0E774A9825F1469500AB9D7B /* SwiftyTesseract */,
 			);
 			productName = StackViewSample;
 			productReference = 0E6D97FC25CEBC8E005A4E87 /* StackViewSample.app */;
@@ -246,6 +252,7 @@
 			mainGroup = 0E6D97F325CEBC8E005A4E87;
 			packageReferences = (
 				0E6D983A25D57EAF005A4E87 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				0E774A9725F1469500AB9D7B /* XCRemoteSwiftPackageReference "SwiftyTesseract" */,
 			);
 			productRefGroup = 0E6D97FD25CEBC8E005A4E87 /* Products */;
 			projectDirPath = "";
@@ -264,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E6D980C25CEBC91005A4E87 /* LaunchScreen.storyboard in Resources */,
+				0E774A9E25F146BD00AB9D7B /* tessdata in Resources */,
 				0E6D980925CEBC91005A4E87 /* Assets.xcassets in Resources */,
 				0E6D980725CEBC8E005A4E87 /* Main.storyboard in Resources */,
 			);
@@ -644,6 +652,14 @@
 				minimumVersion = 10.5.2;
 			};
 		};
+		0E774A9725F1469500AB9D7B /* XCRemoteSwiftPackageReference "SwiftyTesseract" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyTesseract/SwiftyTesseract";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -656,6 +672,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0E6D983A25D57EAF005A4E87 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
 			productName = RealmSwift;
+		};
+		0E774A9825F1469500AB9D7B /* SwiftyTesseract */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E774A9725F1469500AB9D7B /* XCRemoteSwiftPackageReference "SwiftyTesseract" */;
+			productName = SwiftyTesseract;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

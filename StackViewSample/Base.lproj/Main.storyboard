@@ -122,8 +122,11 @@
                             <constraint firstItem="ZSS-mw-RQH" firstAttribute="width" secondItem="cbc-z7-LPd" secondAttribute="width" id="yDC-Me-0ra"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="vTR-an-l6r"/>
+                    <navigationItem key="navigationItem" id="vTR-an-l6r">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="organize" id="Ohm-dj-htS"/>
+                    </navigationItem>
                     <connections>
+                        <outlet property="imageSelectButton" destination="Ohm-dj-htS" id="Avg-eB-kaC"/>
                         <outlet property="noteView" destination="ZSS-mw-RQH" id="VJk-qc-oU2"/>
                         <outlet property="titleView" destination="fIG-1V-AKe" id="igp-uO-wWe"/>
                     </connections>
