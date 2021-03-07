@@ -6,3 +6,6 @@
 	- [SwiftyTesseract](https://github.com/SwiftyTesseract/SwiftyTesseract#Using-SwiftyTesseract-in-Your-Project)
 - DB
 	- [Realm](https://github.com/realm/realm-cocoa)
+
+# サンプル動画
+- https://drive.google.com/file/d/1AoyugdC1cTGJvznFmSnUjfIlUbudefQA/view?usp=sharing
